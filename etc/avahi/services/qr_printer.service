@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone='no'?>
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<!-- 
+    Avahi mDNS Service Configuration
+    https://linux.die.net/man/5/avahi.service
+
+    Service Types: http://www.dns-sd.org/servicetypes.html
+
+ -->
+
+<service-group>
+    <name replace-wildcards="yes">QR Printer UI @ %h</name>
+    <service>
+        <type>_http._tcp</type>
+        <port>80</port>
+        <!-- http://www.dns-sd.org/txtrecords.html#http -->
+        <txt-record>path=/qr_printer.html</txt-record>
+    </service>
+</service-group>
