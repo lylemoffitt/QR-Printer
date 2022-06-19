@@ -1,11 +1,11 @@
 
 install:
-	cp -nR etc /etc
-	cp -nR www /var/www
+	cp -nR etc/avahi /etc/
+	cp -nR www/html /var/www/
 
 clean:
-	find etc -type f | xargs -I '{}' rm "/etc/{}"
-	find www -type f | xargs -I '{}' rm "/var/www/{}"
+	find etc/ -type f | xargs -I '{}' rm "/{}"
+	find www/ -type f | xargs -I '{}' rm "/var/{}"
 
 apt-setup:
 	sudo apt-get install avahi-daemon avahi-discover avahi-utils libnss-mdns mdns-scan
