@@ -13,6 +13,7 @@
     <service>
         <type>_http._tcp</type>
         <port>80</port>
+        <domain-name>qr.printer.local</domain-name>
         <!-- http://www.dns-sd.org/txtrecords.html#http -->
         <txt-record>path=/qr_printer.html</txt-record>
     </service>
