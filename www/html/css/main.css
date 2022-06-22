@@ -1,0 +1,43 @@
+body {
+  background-color: bisque;
+}
+
+label {
+  display: flex;
+}
+
+input[type=text] {
+  width: 70%;
+  margin-left: 4px;
+}
+
+textarea {
+  width: 70%;
+  margin-left: 4px;
+}
+
+#label {
+  border: 3px solid black;
+}
+
+#qrcode {
+  display: none;
+}
+
+
+@media screen and (orientation:portrait) {
+  #label {
+    width: 98%
+  }
+}
+
+@media screen and (orientation:landscape) {
+  #label {
+    width: 83%
+  }
+}
+
+#btn-p {
+  display: flex;
+  justify-content: center;
+}
